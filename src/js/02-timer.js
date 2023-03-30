@@ -10,7 +10,7 @@ const timerMinutes = document.querySelector('[data-minutes]');
 const timerSeconds = document.querySelector('[data-seconds]');
 
 // Disable start button initially
-startButton.disabled = false;
+startButton.disabled = true;
 
 // Set up flatpickr date picker
 flatpickr(datePicker, {
