@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.timer .value {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+}
+
+.timer .label {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Timer styling */
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 2rem;
+  margin-top: 1rem;
+
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+}
+
+
+.timer .field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.timer .value {
+  background-color: #f8f8f8;
+  border: 2px solid #f8f8f8;
+  border-radius: 50%;
+  color: #333;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timer .label {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Flatpickr styling */
+.flatpickr-input {
+  background-color: #f8f8f8;
+  border: 2px solid #f8f8f8;
+  border-radius: 5px;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  width: 15rem;
+  height: 3rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.flatpickr-input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.countdown-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-timer__display {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.countdown-timer__button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.countdown-timer__button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+
