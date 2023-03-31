@@ -1,7 +1,5 @@
 const startButton = document.querySelector('[data-start]');
 const stopButton = document.querySelector('[data-stop]');
-const playButton = document.querySelector('#play-melody');
-const music = document.querySelector('#music');
 
 let intervalId = null;
 
@@ -11,10 +9,11 @@ function changeBackgroundColor() {
 }
 
 function playMelody() {
-  music.play();
+  // play melody here
 }
 
 startButton.addEventListener('click', () => {
+  // Disable the start button 
   startButton.disabled = true;
 
   intervalId = setInterval(() => {
@@ -24,10 +23,10 @@ startButton.addEventListener('click', () => {
 });
 
 stopButton.addEventListener('click', () => {
+  // Re-enable the start button
   startButton.disabled = false;
 
   clearInterval(intervalId);
-  music.pause();
 });
 
 
