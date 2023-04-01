@@ -20,6 +20,7 @@ function getRandomHexColor() {
 
 startButton.addEventListener('click', () => {
   startButton.disabled = true;
+  stopButton.disabled = false;
 
   intervalId = setInterval(() => {
     changeBackgroundColor();
@@ -28,8 +29,10 @@ startButton.addEventListener('click', () => {
 });
 
 stopButton.addEventListener('click', () => {
-  startButton.disabled = false;
-
   clearInterval(intervalId);
   music.pause();
+  stopButton.disabled = true;
+  startButton.disabled = false;
 });
+
+stopButton.disabled = true;
